@@ -1,0 +1,178 @@
+
+/* CSS RESET & BASE STYLES */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* MAIN NAV STUFF */
+
+.main-nav {
+    /* background-color: lightcoral; */
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.main-nav__stuff-box {
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list-container {
+    background: red;
+}
+
+.list {
+    list-style: none;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: space-around;
+    width: 55rem;
+    padding-left: 1rem;
+}
+
+.list-item {
+    padding: 1.2rem .5rem;
+    cursor: pointer;
+    background-color: hotpink;
+}
+
+.list-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    padding: .5rem .5rem;
+    background-color: rgb(63, 155, 63);
+}
+
+.list-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #3d3d3d;
+    transform: scaleX(0);
+    transition: all .18s ease-in;
+}
+
+.list-item:hover .list-link::before {
+    transform: scaleX(1);
+}
+
+/* NAV ICON */
+.nav-icon {
+    width: .8rem;
+    height: .8rem;
+    fill: #3d3d3d;
+    transform: translate(.4rem, .5px)
+}
+
+/* LOGO */
+.logo {
+    width: 10rem;
+}
+
+/* BUTTON BOX */
+.btn-box {
+    /* background: palevioletred; */
+    align-self: center;
+}
+
+.btn {
+    border: 0;
+    font-family: inherit;
+    font-weight: 600;
+    padding: .9rem 1rem;
+}
+
+.btn--primary {
+    background: #f224f2;
+    color: #fff;
+    margin-right: .4rem;
+    
+}
+
+.btn--secondary {
+    background: #fff;
+    border: 1px solid #000;
+    margin-right: 1.5rem;
+    padding: .89rem 1rem;
+}
+
+.btn--tertiary {
+    background: transparent;
+}
+
+/* BURGER */
+.burger {
+    display: none;
+    align-self: center;
+    border: 2px solid black;
+    border-radius: 5px;
+} 
+
+.burger div {
+    height: 2px;
+    width: 2rem;
+    background: #000;
+    margin: 5px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+    .btn--secondary,
+    .btn--tertiary {
+        display: none;
+    }
+
+    .burger {
+        transform: translateY(-.5rem);
+        align-self: start;
+        display: block;
+        margin-left: 2rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    .main-nav__stuff-box {
+        justify-content: flex-end;
+
+    }
+
+    .list-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        /* width: 35rem; */
+        padding-top: 7rem;
+    }
+
+    .list {
+        flex-direction: column;
+        padding: 0;
+        padding: 0 2rem;
+        width: 37rem;
+
+    }
+}
+

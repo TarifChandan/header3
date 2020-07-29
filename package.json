@@ -1,0 +1,23 @@
+{
+  "name": "header3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "go:live": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TarifChandan/header3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TarifChandan/header3/issues"
+  },
+  "homepage": "https://github.com/TarifChandan/header3#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
