@@ -8,59 +8,122 @@
     <title>Header 3</title>
 </head>
 <body>
+    <div class="background"></div>
     <header class="header">
         <nav class="main-nav">
             <div class="logo-box">
                 <img src="logo.png" alt="Company Logo" class="logo">
             </div>
 
+            <div class="dropdown-menu-name-box">
+                <svg class="menu-name-icon">
+                    <use xlink:href="sprite.svg#down-arrow"></use>
+                </svg> 
+                <span>Feature</span>    
+            </div>
+
             <div class="main-nav__stuff-box">
+                <ul class="list">
+                    <li class="list-item dropdown">
+                        <a href="#" class="list-link">Features</a>
+                        <svg class="nav-icon">
+                            <use xlink:href="sprite.svg#down-arrow"></use>
+                        </svg> 
 
-                <div class="list-container">
-                    <ul class="list">
-                        <li class="list-item">
-                            <a href="#" class="list-link">
-                                <span>Features</span>   
-                                <svg class="nav-icon">
-                                    <use xlink:href="sprite.svg#down-arrow"></use>
+                        <div class="dropdown-menu">
+                            <div class="feature">
+                                <svg class="dropdown-icon">
+                                    <use xlink:href="sprite.svg#diamond"></use>
                                 </svg> 
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">Pricing</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">
-                                <span>Integrations</span>   
-                                <svg class="nav-icon">
-                                    <use xlink:href="sprite.svg#down-arrow"></use>
+                                <h4 class="heading-4">Customer Data</h4>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque unde ullam neque aliquam repellendus? 
+                                    Nostrum voluptate accusamus officiis facilis quas?
+                                </p>
+
+                                <a href="#" class="dropdown-link">View customer data tools</a>
+                            </div>
+                            <div class="feature">
+                                <svg class="dropdown-icon">
+                                    <use xlink:href="sprite.svg#fruit"></use>
                                 </svg> 
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">Partners</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">Customers</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">Learn</a>
-                        </li>
-                    </ul>
-                </div>
+                                <h4 class="heading-4">Personalization</h4>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque unde ullam neque aliquam repellendus? 
+                                    Nostrum voluptate accusamus officiis facilis quas?
+                                </p>
 
-                <div class="btn-box">
-                    <button class="btn btn--secondary">Try Drip Free</button>
-                    <button class="btn btn--primary">Get a demo</button>
-                    <button class="btn btn--tertiary">Sign In</button>
-                </div>
+                                <a href="#" class="dropdown-link">View personalization tools</a>
+                            </div>
+                            <div class="feature">
+                                <svg class="dropdown-icon">
+                                    <use xlink:href="sprite.svg#app"></use>
+                                </svg> 
+                                <h4 class="heading-4">Engagement</h4>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque unde ullam neque aliquam repellendus? 
+                                    Nostrum voluptate accusamus officiis facilis quas?
+                                </p>
 
+                                <a href="#" class="dropdown-link">View engagement tools</a>
+                            </div>
+                            <div class="feature">
+                                <svg class="dropdown-icon">
+                                    <use xlink:href="sprite.svg#knowledge"></use>
+                                </svg> 
+                                <h4 class="heading-4">Optimization</h4>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque unde ullam neque aliquam repellendus? 
+                                    Nostrum voluptate accusamus officiis facilis quas?
+                                </p>
+
+                                <a href="#" class="dropdown-link">View optimization tools</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Pricing</a>
+                    </li>
+                    <li class="list-item dropdown">
+                        <a href="#" class="list-link">Integrations</a>
+                        <svg class="nav-icon">
+                            <use xlink:href="sprite.svg#down-arrow"></use>
+                        </svg> 
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Partners</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Customers</a>
+                    </li>
+                    <li class="list-item dropdown">
+                        <a href="#" class="list-link">Learn</a>
+                        <svg class="nav-icon">
+                            <use xlink:href="sprite.svg#down-arrow"></use>
+                        </svg> 
+                    </li>
+                </ul>
+
+                <div class="nav-info">
+                    <p class="nav-info__text">Get closer to your customers with Drip ECRM.</p>
+
+                    <div class="btn-box">
+                        <button class="btn btn--secondary">Try Drip Free</button>
+                        <button class="btn btn--primary">Get a demo</button>
+                        <button class="btn btn--tertiary">Sign In</button>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="package">
+                <button class="btn btn--primary cta">Get a demo</button>
                 <div class="burger">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
             </div>
+            
         </nav>
         <div class="header__text-stuff">Header Text and Stuff</div>
     </header>
